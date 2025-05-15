@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: black;
+  background-image: url("assets/bg-stars.svg");
+  color: white;
+  text-align: center;
+}
+.nav {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+.nav h1 {
+  font-weight: 600;
+  color: rgb(212, 126, 64);
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  text-shadow: 4px 4px 6px brown;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+  margin-bottom: 2.8rem;
+}
+img {
+  width: 400px;
+  border-radius: 50%;
+  height: 400px;
+  object-fit: cover;
+}
+.main h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: rgb(176, 80, 12);
+  letter-spacing: 0.2rem;
+  margin-bottom: 8px;
+}
+.main h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgb(197, 127, 77);
+  letter-spacing: 0.2rem;
+}
+.about,
+.program {
+  margin-bottom: 2.8rem;
+}
+.about h2,
+.program h2,
+footer h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: rgb(176, 80, 12);
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+.about p,
+.program p {
+  font-size: 1.4rem;
+  padding: 0 16rem;
+  letter-spacing: 0.1rem;
+  color: rgb(224, 192, 170);
+}
+.github-link {
+  color: rgb(176, 80, 12);
+  font-size: 1.4rem;
+}
+.github-link:hover {
+  color: darkorange;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.contact-links p {
+  color: rgb(182, 126, 88);
+  font-size: 1.2rem;
+}
+.contact-links span {
+  color: rgb(224, 192, 170);
+}
+.contact-links a {
+  text-decoration: none;
+  color: rgb(224, 192, 170);
+  font-size: 1.2rem;
+}
+.contact-links a:hover {
+  color: rgb(176, 80, 12);
+}
+.contact-links p:last-child {
+  margin-bottom: 3rem;
+}
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about p,
+  .program p {
+    padding: 0 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .main h2,
+  .about h2,
+  .program h2 {
+    font-size: 1.6rem;
+  }
+  .about p,
+  .program p {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
